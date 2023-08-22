@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+:root {
+  --white-color: #fff;
+  --black-color: #080708;
+  --light-gray-color: #bcbec0;
+  --dark-gray-color: #5b5d5f;
+  --blue-color: #26336b;
+}
+
+body {
+  background: url("../img/background.jpg");
+  background-size: cover;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#title-small {
+  margin: 25px 0 0 150px;
+  width: 250px;
+}
+
+#score-container {
+  margin-right: 150px;
+  border-radius: 12px;
+  padding: 15px 25px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 23px 6px rgba(240, 197, 70, 1);
+  background: url("../img/scoreboard_background.jpg");
+}
+
+.score {
+  display: flex;
+  gap: 5px;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 25px;
+}
+
+.tilt {
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  background: linear-gradient(
+    180deg,
+    rgba(204, 154, 0, 1) 0%,
+    rgba(255, 249, 22, 1) 67%,
+    rgba(142, 221, 200, 1) 100%
+  );
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card-name {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.counter {
+  margin: 10px;
+  font-size: 3rem;
+}
+
+#loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  font-size: 2.5rem;
+}
+
+#loading-icon {
+  width: 300px;
+}
