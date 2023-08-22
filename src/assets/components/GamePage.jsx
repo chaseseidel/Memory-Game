@@ -1,6 +1,6 @@
 import { Header } from "./Header";
 import { Cards } from "./Cards";
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo from "../img/logo.png";
 import characters from "../components/characters";
 
